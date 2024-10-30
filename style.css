@@ -18,7 +18,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Times New Roman', Times, serif; */
 }
 
 html,
@@ -38,6 +38,7 @@ body {
     color: white;
     position: absolute;
     top: 0;
+    z-index: 2;
 }
 
 .loader .loadHead {
@@ -106,12 +107,14 @@ nav a::after {
     width: 100%;
     height: 0px;
     background: #14CF93;
+    z-index: 3;
 }
+
 
 .white {
     width: 100%;
-    height: 0;
-    background-color: white;
+    height: 100vh;
+    background-color: #FCFAF8;
 }
 
 header {
@@ -170,6 +173,11 @@ nav a:hover::after {
     transition-delay: 0;
 }
 
+.hero .heroBottom  .reveal .parent {
+    height: 207px;
+}
+
+
 .hero,
 .heroTop,
 .heroBottom {
@@ -192,9 +200,11 @@ nav a:hover::after {
 
 .heroTop .topLeft h1,
 .heroBottom .bottomRight h1 {
-    line-height: .9;
-    font-size: 14vw;
-    font-family: GSB;
+    line-height: .925;
+    font-size: 13vw;
+    font-weight: 200;
+    color: #383838;
+    font-family: GM;
 }
 
 .heroTop .topRight,
@@ -204,9 +214,9 @@ nav a:hover::after {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    gap: 100px;
-    margin-left: 90px;
-    padding-left: 40px;
+    gap: 50px;
+    margin-left: 50px;
+    padding-left: 60px;
 }
 
 .heroTop .topRight{
@@ -219,13 +229,17 @@ nav a:hover::after {
     height: 100%;
     color: #a2a2a2;
     font-family: GM;
+    font-size: .8vw;
     font-weight: 400;
-
+    text-transform: uppercase;
 }
+.heroTop .topRight h5:last-child{
+    margin-left: 30px;
+} 
 
 .heroBottom .bottomLeft {
     margin: 0;
-    gap: 150px;
+    gap: 110px;
     height: 150px;
 
 }
@@ -234,7 +248,7 @@ nav a:hover::after {
     width: 70px;
     height: 68px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #E6E5E3;
     display: flex;
     justify-content: center;
     align-items: center;
