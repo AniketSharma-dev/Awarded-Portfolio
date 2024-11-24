@@ -303,7 +303,7 @@ polyline {
     text-transform: uppercase;
     line-height: 111%;
     font-size: 2.3vw;
-    margin-left:90px ;
+    margin-left: 90px;
 }
 
 .imgleft p span {
@@ -319,21 +319,24 @@ polyline {
     border: solid 1px black;
     position: relative;
 }
-.imgright .imgContainer:nth-child(3) img{
+
+
+.imgright .imgContainer:nth-child(3) img {
     position: absolute;
-    bottom:-10px;
-    right: 150px;
     border-radius: 50px;
+    transform: translate(10%,20%) rotate(2deg);
 }
-.imgright .imgContainer:nth-child(2) img{
+
+.imgright .imgContainer:nth-child(2) img {
     position: absolute;
-    bottom:40px;
-    right: 210px;
     border-radius: 50px;
+    transform: translate(-15%,8%) rotate(0deg);
+
 }
-.imgright .imgContainer:nth-child(1) img{
+
+.imgright .imgContainer:nth-child(1) img {
     position: absolute;
-    bottom:60px;
-    right: 290px;
     border-radius: 50px;
+    transform: translate(-40%,-9%) rotate(-10deg);
+
 }
