@@ -140,8 +140,7 @@ nav {
     padding: 30px 40px;
     display: flex;
     justify-content: space-between;
-
-
+    position: fixed;
 }
 
 nav a {
@@ -203,7 +202,7 @@ nav a:hover::after {
 .hero {
     width: 100%;
     flex-direction: column;
-    margin-top: 55px;
+    margin-top: 155px;
     padding: 0px 20px;
 }
 
@@ -295,14 +294,14 @@ polyline {
 
 .imagery .imgleft {
     width: 50%;
-    border: solid 1px black;
 }
 
 .imgleft p {
     width: 50%;
     font-family: GM;
     text-transform: uppercase;
-    line-height: 1.2;
+    line-height: 111%;
+    
     font-size: 2.3vw;
     margin-left:90px ;
 }
@@ -318,5 +317,11 @@ polyline {
     width: 50%;
     height: 100%;
     border: solid 1px black;
-    display: flex;
+    position: relative;
+}
+.imgright .imgContainer img{
+    position: absolute;
+    bottom:10px;
+    right: 150px;
+    border-radius: 50px;
 }
