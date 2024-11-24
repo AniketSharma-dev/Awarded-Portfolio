@@ -141,6 +141,7 @@ nav {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 9;
 }
 
 nav a {
@@ -301,7 +302,6 @@ polyline {
     font-family: GM;
     text-transform: uppercase;
     line-height: 111%;
-    
     font-size: 2.3vw;
     margin-left:90px ;
 }
@@ -319,9 +319,21 @@ polyline {
     border: solid 1px black;
     position: relative;
 }
-.imgright .imgContainer img{
+.imgright .imgContainer:nth-child(3) img{
     position: absolute;
-    bottom:10px;
+    bottom:-10px;
     right: 150px;
+    border-radius: 50px;
+}
+.imgright .imgContainer:nth-child(2) img{
+    position: absolute;
+    bottom:40px;
+    right: 210px;
+    border-radius: 50px;
+}
+.imgright .imgContainer:nth-child(1) img{
+    position: absolute;
+    bottom:60px;
+    right: 290px;
     border-radius: 50px;
 }
