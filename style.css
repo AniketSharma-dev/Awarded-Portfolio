@@ -320,23 +320,30 @@ polyline {
     position: relative;
 }
 
+.imgright .imgContainer {
+    position: absolute;
+    filter: grayscale();
+    transition: all 0.5s ease-in-out;
+}
+.imgright .imgContainer:hover {
+    position: absolute;
+    filter: none;
+}
+
+.imgright .imgContainer img {
+    border-radius: 50px;
+}
 
 .imgright .imgContainer:nth-child(3) img {
-    position: absolute;
-    border-radius: 50px;
     transform: translate(10%,20%) rotate(2deg);
 }
 
 .imgright .imgContainer:nth-child(2) img {
-    position: absolute;
-    border-radius: 50px;
     transform: translate(-15%,8%) rotate(0deg);
 
 }
 
 .imgright .imgContainer:nth-child(1) img {
-    position: absolute;
-    border-radius: 50px;
     transform: translate(-40%,-9%) rotate(-10deg);
 
 }
