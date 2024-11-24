@@ -28,6 +28,20 @@ function valueSetters() {
   });
 }
 
+
+function loaderAnimationbodyhidder() {
+  window.addEventListener('load', () => {
+    // Simulate loader timeout for demonstration
+    setTimeout(() => {
+      document.body.classList.add('loaded');
+      document.querySelector('.loader').style.display = 'none'; // Hide loader
+      document.body.style.overflow = 'auto'; // Allow scrolling
+    }, 3000); // Adjust timeout as needed
+  });
+  
+
+}
+
 function loaderAnimation() {
   let tl = gsap.timeline();
 
@@ -80,7 +94,7 @@ function animateHomepage() {
     .to(".hero .parent .child", {
       y: "0%",
       stagger: 0.2,
-      duration: 0.5,
+      duration: 1.5,
       ease: Expo.easeInOut,
       onComplete: function () {
         animateSVG();
@@ -97,7 +111,7 @@ function animateSVG() {
     // delay: 2.5,
   });
 }
-
+loaderAnimationbodyhidder();
 revealToSpan();
 valueSetters();
 loaderAnimation();

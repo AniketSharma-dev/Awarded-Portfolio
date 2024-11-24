@@ -21,14 +21,28 @@
     /* font-family: 'Times New Roman', Times, serif; */
 }
 
+/* Once the loader is removed, reveal the content */
+body.loaded #main {
+    visibility: visible;
+    overflow: auto;
+}
+
 html,
 body {
     width: 100%;
     height: 100%;
+
+}
+
+body {
+    overflow: hidden;
+    background-color: #FCFAF8;
+
 }
 
 #mian {
     width: 100%;
+    visibility: hidden;
 }
 
 .loader {
@@ -114,7 +128,7 @@ nav a::after {
 .white {
     width: 100%;
     height: 100vh;
-    background-color: #FCFAF8;
+
 }
 
 header {
@@ -173,7 +187,7 @@ nav a:hover::after {
     transition-delay: 0;
 }
 
-.hero .heroBottom  .reveal .parent {
+.hero .heroBottom .reveal .parent {
     height: 207px;
 }
 
@@ -219,7 +233,7 @@ nav a:hover::after {
     padding-left: 60px;
 }
 
-.heroTop .topRight{
+.heroTop .topRight {
     margin-top: -55px;
 
 }
@@ -233,9 +247,10 @@ nav a:hover::after {
     font-weight: 400;
     text-transform: uppercase;
 }
-.heroTop .topRight h5:last-child{
+
+.heroTop .topRight h5:last-child {
     margin-left: 30px;
-} 
+}
 
 .heroBottom .bottomLeft {
     margin: 0;
@@ -254,14 +269,54 @@ nav a:hover::after {
     align-items: center;
 }
 
-.bottomLeft svg{
+.bottomLeft svg {
     width: 370px;
 }
-path,polyline{
+
+path,
+polyline {
     stroke: #14CF93;
 
 }
 
 .trc {
     color: #a2a2a2;
+}
+
+.imagery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.imagery .imgleft {
+    width: 50%;
+    border: solid 1px black;
+}
+
+.imgleft p {
+    width: 50%;
+    font-family: GM;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: 2.3vw;
+    margin-left:90px ;
+}
+
+.imgleft p span {
+    font-family: M;
+    color: #14CF93;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.imagery .imgright {
+    width: 50%;
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
 }
